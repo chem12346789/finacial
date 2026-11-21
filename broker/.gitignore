@@ -1,0 +1,10 @@
+__pycache__/
+.venv/
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+!.env.example
+*token*.json
+*credential*.json

@@ -1,0 +1,15 @@
+[Unit]
+Description=New York weekend data and trading-window reconciliation
+
+[Timer]
+OnCalendar=Sat,Sun *-*-* 10:00:00 America/New_York
+OnCalendar=Mon..Fri *-*-* 09:30..59:00 America/New_York
+OnCalendar=Mon..Fri *-*-* 10..16:*:00 America/New_York
+OnCalendar=Mon..Fri *-*-* 17:00..29:00 America/New_York
+AccuracySec=1s
+RandomizedDelaySec=0
+Persistent=false
+Unit=play-money.service
+
+[Install]
+WantedBy=timers.target

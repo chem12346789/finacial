@@ -1,0 +1,14 @@
+# Install from the repository root in a virtual environment.
+# In-repository broker package provides the Futu REST client.
+.
+SecretStorage>=3.3.3,<4
+tradingview-screener==3.2.2
+akshare
+arch
+matplotlib
+numpy
+pandas
+PyPortfolioOpt
+quantstats
+riskfolio-lib
+tqdm

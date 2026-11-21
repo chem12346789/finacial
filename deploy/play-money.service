@@ -1,0 +1,8 @@
+[Unit]
+Description=Simulation strategy weekend preparation and opening rebalance
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/workspace/finacial
+ExecStart=/bin/bash %h/workspace/finacial/run_play_money.sh
+UMask=0077
